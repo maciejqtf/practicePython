@@ -3,6 +3,7 @@
 # When you run your program it should ask the user to enter a name, and return the birthday of that person back to them.
 
 import datetime
+import json
 
 #maciejWojtyczka= datetime.datetime(1991,8,23).date()
 
@@ -25,8 +26,8 @@ def birthday_dictionary():
     birthdayDict.update(newPersonDict)
     print(birthdayDict)
 
-
 birthday_dictionary()
+
 
 
 

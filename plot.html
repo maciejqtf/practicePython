@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+<style>
+      html, body {
+        box-sizing: border-box;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.0.3.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="61466ca2-d764-449a-88d3-bd0d54c46eea" data-root-id="p1001" style="display: contents;"></div>
+  
+    <script type="application/json" id="p1236">
+      {"a1b4fd46-fb33-43a3-ad3f-8dd6acbcfa9f":{"version":"3.0.3","title":"Bokeh Application","defs":[],"roots":[{"type":"object","name":"Figure","id":"p1001","attributes":{"x_range":{"type":"object","name":"FactorRange","id":"p1010","attributes":{"factors":["Maciej Wojtyczka","Janusz Kruk","Tomasz Kowalski","Anna Kruk","Maciej Nebelski","Aleksandra Staszak"]}},"y_range":{"type":"object","name":"FactorRange","id":"p1012","attributes":{"factors":["1991.08.23","1963.07.12","1985.01.02","1991.02.02","1996.07.10","1991.06.18"]}},"x_scale":{"type":"object","name":"CategoricalScale","id":"p1014"},"y_scale":{"type":"object","name":"CategoricalScale","id":"p1016"},"title":{"type":"object","name":"Title","id":"p1006"},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p1051","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p1045","attributes":{"selected":{"type":"object","name":"Selection","id":"p1047","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1046"},"data":{"type":"map","entries":[["x",["Maciej Wojtyczka","Janusz Kruk","Tomasz Kowalski","Anna Kruk","Maciej Nebelski","Aleksandra Staszak"]],["top",["1991.08.23","1963.07.12","1985.01.02","1991.02.02","1996.07.10","1991.06.18"]]]}}},"view":{"type":"object","name":"CDSView","id":"p1052","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1053"}}},"glyph":{"type":"object","name":"VBar","id":"p1048","attributes":{"x":{"type":"field","field":"x"},"width":{"type":"value","value":0.5},"top":{"type":"field","field":"top"},"line_color":{"type":"value","value":"#1f77b4"},"fill_color":{"type":"value","value":"#1f77b4"}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p1049","attributes":{"x":{"type":"field","field":"x"},"width":{"type":"value","value":0.5},"top":{"type":"field","field":"top"},"line_color":{"type":"value","value":"#1f77b4"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"#1f77b4"},"fill_alpha":{"type":"value","value":0.1},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p1050","attributes":{"x":{"type":"field","field":"x"},"width":{"type":"value","value":0.5},"top":{"type":"field","field":"top"},"line_color":{"type":"value","value":"#1f77b4"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"#1f77b4"},"fill_alpha":{"type":"value","value":0.2},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p1009","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p1030"},{"type":"object","name":"WheelZoomTool","id":"p1031"},{"type":"object","name":"BoxZoomTool","id":"p1032","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p1033","attributes":{"syncable":false,"level":"overlay","visible":false,"left_units":"canvas","right_units":"canvas","bottom_units":"canvas","top_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"SaveTool","id":"p1034"},{"type":"object","name":"ResetTool","id":"p1035"},{"type":"object","name":"HelpTool","id":"p1036"}]}},"left":[{"type":"object","name":"CategoricalAxis","id":"p1024","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p1025"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p1026"},"major_label_policy":{"type":"object","name":"AllLabels","id":"p1027"}}}],"below":[{"type":"object","name":"CategoricalAxis","id":"p1018","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p1019"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p1020"},"major_label_policy":{"type":"object","name":"AllLabels","id":"p1021"}}}],"center":[{"type":"object","name":"Grid","id":"p1023","attributes":{"axis":{"id":"p1018"}}},{"type":"object","name":"Grid","id":"p1029","attributes":{"dimension":1,"axis":{"id":"p1024"}}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p1236').textContent;
+              const render_items = [{"docid":"a1b4fd46-fb33-43a3-ad3f-8dd6acbcfa9f","roots":{"p1001":"61466ca2-d764-449a-88d3-bd0d54c46eea"},"root_ids":["p1001"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
