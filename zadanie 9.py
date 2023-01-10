@@ -16,6 +16,7 @@ while True:
         print("Too low")
         i +=1
     else:
+        i += 1
         print("Correct! Thue number is", randomInt)
         print("It took you", i, "tries to guess")
         break

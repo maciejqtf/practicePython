@@ -21,6 +21,3 @@ if __name__ == "__main__":
     print(find(l, -1))  # prints False
     print(find(l, 2))  # prints True"""
 
-
-
-print(permonth)
